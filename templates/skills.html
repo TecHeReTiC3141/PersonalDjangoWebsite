@@ -1,0 +1,75 @@
+{% extends 'main_page.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skills_styles.css') }}">
+{% endblock %}
+
+{% block intro %}
+    <h1 class="greeting">
+        Skills
+    </h1>
+{% endblock %}
+
+
+{% block content %}
+    <div class="column">
+        <div class="row">
+            <h2 class="caption">Preferred languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="row">
+            <h2 class="caption">Achievements</h2>
+            <ul>
+                <li></li>
+                <li>C++</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="row">
+            <h2 class="caption">Technologies I know</h2>
+            <ul>
+                <li>
+                    <ul>Data analysis libraries:
+                        <li>pandas</li>
+                        <li>numpy</li>
+                        <li>matplotlib</li>
+                        <li>plotly</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>ML/DL libraries:
+                        <li>skikit-learn</li>
+                        <li>PyTorch</li>
+                        <li>Keras</li>
+                    </ul>
+                </li>
+                <li>
+                    Creation of telegram bots with aiogram
+                </li>
+                <li>
+                    Backend development with Flask
+                </li>
+                <li>
+                    Databases: MySQL, sqlite
+                </li>
+
+            </ul>
+        </div>
+        <div class="row">
+            <h2 class="caption">Education</h2>
+            <ul>
+                <li>Mostly self taught (free courses and articles)</li>
+                <li>Deep Learning School</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

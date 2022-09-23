@@ -1,0 +1,232 @@
+html, body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(201, 225, 225);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1em 0 0;
+    font-size: 10vw;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+ul.sections {
+    list-style-type: none;
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.sect-item {
+    padding-right: 0.25em;
+    border-right: 5px solid rgb(173, 118, 46);
+}
+
+ul.sections li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    margin: 5px;
+}
+
+ul.sections li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.sections li:hover a {
+    background-color: chocolate;
+    position: relative;
+    bottom: 5px;
+}
+
+h1.greeting {
+    background-color: burlywood;
+    padding: 0.25em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    text-decoration: underline;
+    margin-bottom: 0.25em;
+}
+
+div.intro {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    background-image: url(../images/background_sky.jpg);
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+div.descr {
+    background-color: beige;
+    width: 45%;
+    height: 20%;
+    border-radius: 0.5em;
+    border: 3px solid grey;
+    margin-bottom: 2em;
+
+    display: flex;
+    box-shadow: 5px 5px 10px black;
+}
+
+div.descr > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+div.descr div.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+div.features > p {
+    margin: 0;
+}
+
+div.descr > img {
+    float: left;
+    width: 30%;
+    margin: 0.5em;
+    border-radius: 1em;
+    position: relative;
+}
+
+div.refs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.refs img {
+    width: 3em;
+    border-radius: 2em;
+    margin: 0 0.5em;
+}
+
+div.refs img:hover {
+    position: relative;
+    bottom: 5px;
+    /*box-shadow: 5px 5px 10px black;*/
+}
+
+div.content {
+    height: 80%;
+    width: 60%;
+    background-color: burlywood;
+    border: 4px solid rgb(199, 133, 48);
+    border-radius: 10px 100px / 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 1em;
+    font-size: 10em;
+}
+
+div.content > p {
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+div.content > ul.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 70%;
+}
+
+ul.projects li > div.projects-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    padding-left: 0;
+}
+
+div.content div.project {
+    background-color: palegoldenrod;
+    border-radius: 2em;
+    border: 3px solid grey;
+    position: relative;
+    margin: 1em 2em;
+    text-decoration: none;
+    color: black;
+}
+
+div.project div.image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+div.project div.image img {
+    width: 25em;
+    height: 15em;
+    border-radius: 2em;
+}
+
+div.project .description {
+    display: none;
+
+}
+
+div.project:hover div.image {
+    background-color: burlywood;
+    border-radius: 2em;
+    border: 2px solid #a64717;
+}
+
+div.project:hover div.image img {
+    width: 23em;
+    height: 13em;
+    margin: 1em;
+}
+
+div.project:hover .description {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    text-align: center;
+    background-color: #c28f4d;
+    border-radius: 1em;
+    padding: .5em;
+    margin-bottom: 0;
+}
+
+div.project .caption {
+    width: 100%;
+    text-align: center;
+    margin-bottom: .1em;
+}
+
+a {
+    text-decoration: none;
+}

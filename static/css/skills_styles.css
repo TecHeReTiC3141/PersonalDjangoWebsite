@@ -1,0 +1,29 @@
+div.skills {
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 1.5em;
+    width: 70%;
+    margin: 1em;
+}
+
+div.skills > div.column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+div.column > div.row {
+    margin-bottom: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.caption {
+    font-size: 1.25em;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
