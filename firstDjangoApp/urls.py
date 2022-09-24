@@ -26,25 +26,17 @@ all_projects = [
          'descr': 'Rogue-like game with elements of RPG',
          'refs': [{'ref': 'https://github.com/TecHeReTiC3141/Dungetic',
                    'img': '/images/github.png'}]},
-        {'title': 'Platformetic', 'image': '/images/platformetic.png',
-         'descr': 'Simple platformer with elements of bullet hell',
-         'refs': [{'ref': 'https://github.com/TecHeReTiC3141/PygamePlatformer',
-                   'img': '/images/github.png'}]}
     ],
 
     [
-        {'title': 'Platformetic', 'image': '/images/platformetic.png',
-         'descr': 'Simple platformer with elements of bullet hell',
-         'refs': [{'ref': 'https://github.com/TecHeReTiC3141/PygamePlatformer',
+        {'title': 'Style Transfering bot', 'image': '/images/style_bot.png',
+         'descr': 'Tg bot which can transfer style of one image to another one',
+         'refs': [{'ref': 'https://github.com/TecHeReTiC3141/NeuroTransferStylerBot',
                    'img': '/images/github.png'}]},
         {'title': 'Platformetic', 'image': '/images/platformetic.png',
          'descr': 'Simple platformer with elements of bullet hell',
          'refs': [{'ref': 'https://github.com/TecHeReTiC3141/PygamePlatformer',
                    'img': '/images/github.png'}]},
-        {'title': 'Platformetic', 'image': '/images/platformetic.png',
-         'descr': 'Simple platformer with elements of bullet hell',
-         'refs': [{'ref': 'https://github.com/TecHeReTiC3141/PygamePlatformer',
-                   'img': '/images/github.png'}]}
     ],
 
 ]
