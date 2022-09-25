@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import path, include
+from django.urls import path
 from django.views.generic import TemplateView
 
 all_projects = [
@@ -33,10 +33,12 @@ all_projects = [
          'descr': 'Tg bot which can transfer style of one image to another one',
          'refs': [{'ref': 'https://github.com/TecHeReTiC3141/NeuroTransferStylerBot',
                    'img': '/images/github.png'}]},
-        {'title': 'Platformetic', 'image': '/images/platformetic.png',
-         'descr': 'Simple platformer with elements of bullet hell',
-         'refs': [{'ref': 'https://github.com/TecHeReTiC3141/PygamePlatformer',
-                   'img': '/images/github.png'}]},
+        {'title': 'System of road accidents analysis', 'image': '/images/road_accidents.png',
+         'descr': 'A system that explores data about road accidents in Moscow'
+                  ' and creates a list of recomendations to prevent from them or to reduce their damage.',
+         'refs': [{'ref': 'https://github.com/TecHeReTiC3141/System-of-road-accidents-analytics',
+                   'img': '/images/github.png'}, {'ref': 'https://www.kaggle.com/datasets/timkiryachek/accidents-in-moscow',
+                   'img': '/images/kaggle.png'}]}
     ],
 
 ]
@@ -45,5 +47,6 @@ all_projects = [
 urlpatterns = [
     path("", TemplateView.as_view(template_name='main_page.html',
                                   extra_context={'projects': all_projects}
-                                  ))
+                                  )
+         )
 ]

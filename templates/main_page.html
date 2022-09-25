@@ -28,15 +28,16 @@
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Tim Kiryachek</title>
+
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/main_styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/skills_styles.css' %}">
+    {% endblock css %}
     {% block style %}
         <style>
 
         </style>
     {% endblock %}
-    {% block css %}
-        <link rel="stylesheet" href="{% static 'css/main_styles.css' %}">
-        <link rel="stylesheet" href="{% static 'css/skills_styles.css' %}">
-    {% endblock css %}
 </head>
 
 {% endblock %}
@@ -47,16 +48,17 @@
     <div class="intro">
     {% block intro %}
          <h1 class="greeting">
-            Tim Kiryachek
-        </h1>
+            Кирячек Тимофей
+         </h1>
 
         <div class="descr">
-            <img src="{% static "images/deimos.png" %}" alt="avatar">
+            <img src="{% static "images/tec.png" %}" alt="avatar">
             <div>
                 <div class="features">
                     <p>Python developer from Chusovoy, Russia</p>
+                    <p>Competitive programmer</p>
                     <p>ML and DS enthusiast</p>
-                    <p>Game maker, competitive programmer</p>
+                    <p>Game maker</p>
                     <br>
                     <div class="refs">
                         <a href="https://github.com/TecHeReTiC3141" target="_blank">
@@ -134,6 +136,7 @@
                         <li>ML/DL</li>
                         <li>Спортивное программирование</li>
                         <li>Разработка игр (pygame)</li>
+                        <li>Шахматы</li>
                     </ul>
                 </div>
             </div>
