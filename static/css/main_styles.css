@@ -60,6 +60,7 @@ h1.greeting {
     font-size: 3em;
     text-decoration: underline;
     margin-bottom: 0.25em;
+    text-align: center;
 }
 
 div.intro {

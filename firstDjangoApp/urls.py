@@ -36,8 +36,9 @@ all_projects = [
         {'title': 'System of road accidents analysis', 'image': '/images/road_accidents.png',
          'descr': 'A system that explores data about road accidents in Moscow'
                   ' and creates a list of recomendations to prevent from them or to reduce their damage.',
-         'refs': [{'ref': 'https://github.com/TecHeReTiC3141/System-of-road-accidents-analytics',
-                   'img': '/images/github.png'}, {'ref': 'https://www.kaggle.com/datasets/timkiryachek/accidents-in-moscow',
+         'refs': [{'ref': 'https://github.c  om/TecHeReTiC3141/System-of-road-accidents-analytics',
+                   'img': '/images/github.png'},
+                  {'ref': 'https://www.kaggle.com/datasets/timkiryachek/accidents-in-moscow',
                    'img': '/images/kaggle.png'}]}
     ],
 

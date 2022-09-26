@@ -48,17 +48,17 @@
     <div class="intro">
     {% block intro %}
          <h1 class="greeting">
-            Кирячек Тимофей
+             Кирячек Тимофей <br> <span style="font-size: 0.7em">Пермский край, г. Чусовой</span>
          </h1>
 
         <div class="descr">
             <img src="{% static "images/tec.png" %}" alt="avatar">
             <div>
                 <div class="features">
-                    <p>Python developer from Chusovoy, Russia</p>
-                    <p>Competitive programmer</p>
+                    <p>Python/C++ разработчик</p>
+                    <p>Спортивный программист</p>
                     <p>ML and DS enthusiast</p>
-                    <p>Game maker</p>
+                    <p>Разработчик игр</p>
                     <br>
                     <div class="refs">
                         <a href="https://github.com/TecHeReTiC3141" target="_blank">
@@ -80,35 +80,9 @@
     <div class="content">
     {% block content %}
 
-        <p>Hello, dear friend!
-            I'm glad to see you on my personal website</p>
+        <p>Привет, дорогой друг! Я рад видеть вас на моем персональном сайте</p>
 
-        <p>Here you can look at my projects, 
-            take a glance at my skills and contact me it you want</p>
-        <ul class="projects">
-            <li>
-                {% for row in projects %}
-                    <div class="projects-row">
-                        {% for project in row %}
-                            <div class="project">
-                                <div class="image">
-                                    <img src="{% static project.image %}" alt="{{ project.title }}">
-                                    <p class="description">{{ project.descr }}</p>
-                                </div>
-                                <h2 class="caption">{{ project.title}}</h2>
-                                <div class="refs">
-                                    {% for ref in project.refs %}
-                                        <a href="{{ ref.ref}}" target="_blank">
-                                            <img src="{% static ref.img %}" alt="">
-                                        </a>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% endfor %}
-            </li>
-        </ul>
+        <p>Здесь вы можете посмотреть на мои проекты, навыки разработки, а также связаться со мной при желании</p>
 
         <div class="skills">
             <div class="column">
@@ -124,9 +98,16 @@
                 <div class="row">
                     <h2 class="caption">Достижения</h2>
                     <ul>
-                        <li></li>
-                        <li>C++</li>
-                        <li></li>
+                        <li>Победитель международной <br>
+                            олимпиады по ИИ AIIJC 2021</li>
+                        <li>Призер национальной олимпиады <br>
+                            по анализу данных DANO 2021</li>
+                        <li>Победитель ВМИО "Звезда", <br>
+                            "Техника и технологии", 2022</li>
+                        <li>Победитель "Талант 20.35" <br>
+                            (профили Python, ИИ), 2022</li>
+                        <li>Призер олимпиады "Траектория будущего" <br>
+                            (профиль Microsoft Azure), 2022</li>
                     </ul>
                 </div>
                  <div class="row">
@@ -181,13 +162,41 @@
                 <div class="row">
                     <h2 class="caption">Образования</h2>
                     <ul>
-                        <li>Самообучение (бесплатные курсы и статьи)</li>
+                        <li>Самообучение (курсы и статьи)</li>
                         <li>Deep Learning School от МФТИ</li>
                         <li>Тинькофф.Поколение (Спорт. программирование)</li>
+                        <li>Заочная школа СУНЦ МГУ</li>
                     </ul>
                 </div>
             </div>
         </div>
+        <h1 class="greeting">Основные проекты</h1>
+        <ul class="projects">
+            <li>
+                {% for row in projects %}
+                    <div class="projects-row">
+                        {% for project in row %}
+                            <div class="project">
+                                <div class="image">
+                                    <img src="{% static project.image %}" alt="{{ project.title }}">
+                                    <p class="description">{{ project.descr }}</p>
+                                </div>
+                                <h2 class="caption">{{ project.title}}</h2>
+                                <div class="refs">
+                                    {% for ref in project.refs %}
+                                        <a href="{{ ref.ref}}" target="_blank">
+                                            <img src="{% static ref.img %}" alt="">
+                                        </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </li>
+        </ul>
+
+
 
 
     {% endblock content %}
@@ -195,7 +204,7 @@
 
     {% block footer %}
     <footer>
-        <h4>&copy;TecHeReTiC</h4>
+        <h4>TecHeReTiC</h4>
     </footer>
     {% endblock footer %}
 
