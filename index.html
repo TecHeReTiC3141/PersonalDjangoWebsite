@@ -1,26 +1,6 @@
-{% load static %}
-
-{#{% macro display_project(project) %}#}
-{#    <div class="project">#}
-{#        <div class="image">#}
-{#            <img src="{% static project.image %}" alt="{{ project.title }}">#}
-{#            <p class="description">{{ project.descr }}</p>#}
-{#        </div>#}
-{#        <h2 class="caption">{{ project.title}}</h2>#}
-{#        <div class="refs">#}
-{#            {% for ref in project.refs %}#}
-{#                <a href="{{ ref.ref}}" target="_blank">#}
-{#                    <img src="{{ url_for('static', filename=ref.img) }}" alt="">#}
-{#                </a>#}
-{#            {% endfor %}#}
-{#        </div>#}
-{#    </div>#}
-{#{% endmacro %}#}
-
 <!DOCTYPE html>
 <html lang="en">
 
-{% block head %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,24 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Tim Kiryachek</title>
 
-    {% block css %}
         <link rel="stylesheet" href="./static/css/main_styles.css">
         <link rel="stylesheet" href="./static/css/skills_styles.css">
-    {% endblock css %}
-    {% block style %}
         <style>
 
         </style>
-    {% endblock %}
 </head>
 
-{% endblock %}
-
 <body>
-{% block body %}
 
     <div class="intro">
-    {% block intro %}
          <h1 class="greeting">
              Кирячек Тимофей <br> <span style="font-size: 0.7em">Пермский край, г. Чусовой</span>
          </h1>
@@ -74,11 +46,9 @@
                 </div>
             </div>
         </div>
-    {% endblock intro %}
     </div>
 
     <div class="content">
-    {% block content %}
 
         <p>Привет, дорогой друг! Я рад видеть вас на моем персональном сайте</p>
 
@@ -196,14 +166,12 @@
 <!--            </li>-->
 <!--        </ul>-->
 
-    {% endblock content %}
     </div>
 
     <footer>
         <h4>TecHeReTiC</h4>
     </footer>
 
-{% endblock body %}
 </body>
 
 </html>
